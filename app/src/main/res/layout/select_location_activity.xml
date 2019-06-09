@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    android:focusable="true">
+
+    <include layout="@layout/select_city_search_layout"
+        android:id="@+id/searchBarLayout" />
+
+    <TextView
+        android:id="@+id/SelectCityTag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/searchBarLayout"
+        android:textColor="#fff"
+        android:text="@string/select_city_heading"
+        android:textSize="@dimen/sp_30"
+        android:textStyle="bold"
+        android:layout_marginLeft="@dimen/dp_30"
+        android:layout_marginRight="@dimen/dp_30"
+        android:layout_marginTop="@dimen/dp_50"/>
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/selectCitySwipeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginRight="@dimen/dp_26"
+        android:layout_marginLeft="@dimen/dp_26"
+        android:layout_below="@id/SelectCityTag">
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/dp_30"
+                android:paddingBottom="20dp">
+                <LinearLayout
+                    android:id="@+id/userLocationButtonLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#fefefe"
+                        android:textSize="@dimen/sp_22"
+                        android:textStyle="bold"
+                        android:text="@string/around_me"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#fefeff"
+                        android:textAllCaps="true"
+                        android:textSize="@dimen/sp_12"
+                        android:paddingBottom="@dimen/dp_10"
+                        android:text="@string/request_your_geoLocation"/>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_1"
+                        android:background="#c7c6c7"/>
+                </LinearLayout>
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/citiesList"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/userLocationButtonLayout"/>
+                <TextView
+                    android:id="@+id/noItemFoundTV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="@string/no_city_result"
+                    android:textColor="#fff"
+                    android:textSize="@dimen/sp_20"
+                    android:gravity="center"
+                    android:visibility="gone"
+                    android:layout_below="@id/userLocationButtonLayout"/>
+            </RelativeLayout>
+        </android.support.v4.widget.NestedScrollView>
+
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+</RelativeLayout>

@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/relative"
+    tools:context="com.ottice.ottice.Book_tourActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/picker_dialogbox_background"
+        android:id="@+id/toolbar">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/book_tour"
+            android:textAllCaps="true"
+            android:textStyle="bold"
+            android:textColor="@color/color_3e3e3e"
+            android:layout_gravity="center"
+            android:textSize="@dimen/sp_20"/>
+
+    </android.support.v7.widget.Toolbar>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/dp_20"
+        android:layout_marginRight="@dimen/dp_20"
+        android:layout_below="@+id/toolbar"
+        android:layout_marginTop="@dimen/dp_30">
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/text_input_first_name"
+            android:layout_marginTop="@dimen/dp_30"
+            android:textColorHint="@color/hint_light_color">
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/first_name"
+                android:inputType="textCapWords"
+                android:textColor="@color/color_white"
+                android:maxLines="1"
+                android:id="@+id/booking_first_name"/>
+        </android.support.design.widget.TextInputLayout>
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/hint_light_color"
+            android:layout_marginTop="@dimen/dp_30"
+            android:layout_below="@+id/text_input_first_name"
+            android:id="@+id/text_input_last_name">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/last_name"
+                android:inputType="textCapWords"
+                android:maxLines="1"
+                android:textColor="@color/color_white"
+                android:id="@+id/booking_last_name"/>
+        </android.support.design.widget.TextInputLayout>
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/hint_light_color"
+            android:layout_marginTop="@dimen/dp_30"
+            android:layout_below="@id/text_input_last_name"
+            android:id="@+id/text_input_ph_no">
+
+       <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/phone_no"
+            android:inputType="phone"
+            android:textColor="@color/color_white"
+            android:maxLines="1"
+            android:layout_marginTop="@dimen/dp_20"
+            android:maxLength="10"
+            android:id="@+id/booking_ph_no"/>
+
+        </android.support.design.widget.TextInputLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_input_ph_no"
+        android:layout_marginTop="@dimen/dp_30"
+        android:weightSum="2"
+        android:orientation="horizontal"
+        android:id="@+id/date_time_linear_text">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/booking_date"
+        android:textColor="@color/color_white"
+        android:layout_weight="1"
+        android:textStyle="bold"
+        android:textSize="@dimen/sp_16"
+        android:textAlignment="center"
+        android:id="@+id/booking_date_heading"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/booking_time"
+            android:textColor="@color/color_white"
+            android:textStyle="bold"
+            android:textSize="@dimen/sp_16"
+            android:textAlignment="center"
+            android:layout_weight="1"
+            android:id="@+id/booking_time_heading"/>
+
+    </LinearLayout>
+
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/date_time_linear_text"
+        android:layout_marginTop="@dimen/dp_20"
+        android:weightSum="2"
+        android:id="@+id/linear_picker_layout"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/date_text_picker"
+            android:hint="@string/choose_date"
+            android:layout_weight="1"
+            android:textSize="@dimen/sp_15"
+            android:layout_marginRight="@dimen/dp_15"
+            android:layout_marginEnd="@dimen/dp_15"
+            android:textColor="@color/color_white"
+            android:textColorHint="@color/hint_light_color"
+            android:padding="@dimen/dp_10"
+            android:background="@drawable/date_time_picker_button_background"
+            android:textAlignment="center"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/time_text_picker"
+            android:textAlignment="center"
+            android:textColor="@color/color_white"
+            android:layout_marginLeft="@dimen/dp_15"
+            android:layout_marginStart="@dimen/dp_15"
+            android:layout_weight="1"
+            android:textColorHint="@color/hint_light_color"
+            android:padding="@dimen/dp_10"
+            android:textSize="@dimen/sp_15"
+            android:background="@drawable/date_time_picker_button_background"
+            android:hint="@string/choose_time"/>
+
+
+         </LinearLayout>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/dp_20"
+        android:layout_marginLeft="@dimen/dp_20"
+        android:layout_marginRight="@dimen/dp_20"
+        android:textSize="@dimen/sp_18"
+        android:textColor="@color/color_white"
+        android:id="@+id/submit_button"
+        android:textAllCaps="false"
+        android:background="@drawable/description_booking_button_background"
+        android:text="@string/request_tour"/>
+
+
+</RelativeLayout>
+
+
+
+
+</RelativeLayout>

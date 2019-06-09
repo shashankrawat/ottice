@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/search_layout"
+        android:id="@+id/searchAcitivitSearchBar"/>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/searchAcitivitSearchBar"
+        android:layout_marginTop="@dimen/dp_10">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/nearByText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/search_nearby_text"
+                android:paddingRight="@dimen/dp_15"
+                android:paddingLeft="@dimen/dp_15"
+                android:paddingTop="@dimen/dp_10"
+                android:paddingBottom="@dimen/dp_10"
+                android:drawableRight="@mipmap/white_pin"
+                android:background="@drawable/search_near_by_background"
+                android:textSize="@dimen/sp_16" />
+
+            <TextView
+                android:id="@+id/cityHeading"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/nearByText"
+                android:textSize="@dimen/sp_14"
+                android:padding="@dimen/dp_5"
+                android:background="#eae8e8"
+                android:text="@string/ottice_cities"/>
+
+            <RelativeLayout
+                android:id="@+id/recyclerviewLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/cityHeading">
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/citiesRecyclerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/noOtticeCityFound"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="@string/search_no_city_found_text"
+                    android:textSize="@dimen/sp_18"
+                    android:paddingLeft="@dimen/dp_15"
+                    android:paddingRight="@dimen/dp_15"
+                    android:visibility="gone" />
+                <ProgressBar
+                    android:id="@+id/cityProgressBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"/>
+                <TextView
+                    android:id="@+id/cityRetry"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/retry"
+                    android:layout_centerInParent="true"
+                    android:visibility="gone"
+                    android:gravity="center"
+                    android:textSize="@dimen/sp_20"
+                    android:textColor="#2e2d2d"
+                    android:drawableTop="@mipmap/reload_icon"/>
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+
+
+</RelativeLayout>

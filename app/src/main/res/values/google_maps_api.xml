@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- credentials to be used to generate keys from google developer console
+          95:0D:FD:6B:FA:BA:75:EB:58:E0:CA:58:5B:4E:08:90:F3:B6:C2:54;com.ottice.ottice-->
+    <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">AIzaSyBcfm8uYEPQ35jEunYMUeLLMsklmzfmXOI</string>
+</resources>

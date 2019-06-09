@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/reviews_dialog"
+    android:padding="@dimen/dp_10">
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/text_reviews"
+        android:text="@string/write_reviews"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/black"
+        android:textSize="@dimen/sp_18"/>
+
+
+    <RatingBar
+        android:id="@+id/dialog_rating_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:max="5"
+        android:scaleX="0.8"
+        android:scaleY="0.8"
+        android:layout_marginTop="@dimen/dp_20"
+        android:clickable="true"
+        style="@style/Base.Widget.AppCompat.RatingBar"
+        android:stepSize="1"
+        android:numStars="5" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dp_20"
+        android:textAlignment="center"
+        android:maxLines="3"
+        android:hint="Please write your review"
+        android:id="@+id/edit_reviews"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/butn_done"/>
+
+
+</LinearLayout>

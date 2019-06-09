@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#f0f0f0">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/profileAppBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/picker_dialogbox_background">
+        <android.support.v7.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/picker_dialogbox_background">
+            <TextView
+                android:id="@+id/profileToolbarTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/profile"
+                android:textAllCaps="true"
+                android:layout_gravity="center"
+                android:textColor="#000"
+                android:textSize="20sp"/>
+        </android.support.v7.widget.Toolbar>
+    </android.support.design.widget.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/profileAppBar">
+        <LinearLayout
+            android:id="@+id/userProfileLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="15dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="15dp"
+            android:clipToPadding="false">
+
+            <RelativeLayout
+                android:id="@+id/profileImageLayout"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginBottom="20dp"
+                android:layout_gravity="center_horizontal">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/userProfileImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@mipmap/placeholder"
+                    android:scaleType="centerCrop"
+                    app:civ_border_width="3dp"
+                    app:civ_border_color="#fff" />
+                <ProgressBar
+                    android:id="@+id/profileImageProgressBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="28dp"
+                    android:visibility="gone"/>
+            </RelativeLayout>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:id="@+id/userDetailsEditButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentEnd="true"
+                        android:src="@mipmap/arrow_icon"
+                        android:padding="@dimen/dp_20"
+                        android:layout_centerVertical="true"
+                        android:contentDescription="@string/action_next"/>
+                    <TextView
+                        android:id="@+id/userName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="15sp"
+                        android:textColor="#000"
+                        android:maxLines="1"
+                        android:padding="12dp"
+                        android:drawableLeft="@mipmap/profile_icon"
+                        android:drawableStart="@mipmap/profile_icon"
+                        android:drawablePadding="20dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_toLeftOf="@id/userDetailsEditButton"
+                        android:layout_toStartOf="@id/userDetailsEditButton"/>
+                    <View
+                        android:id="@+id/nameNmailSeparator"
+                        android:layout_width="wrap_content"
+                        android:layout_height="1dp"
+                        android:background="#f0f0f0"
+                        android:layout_below="@id/userName"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_toLeftOf="@id/userDetailsEditButton"
+                        android:layout_toStartOf="@id/userDetailsEditButton"/>
+                    <TextView
+                        android:id="@+id/userEmail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="12dp"
+                        android:maxLines="1"
+                        android:gravity="center_vertical"
+                        android:layout_below="@id/nameNmailSeparator"
+                        android:textSize="15sp"
+                        android:textColor="#000"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:drawableLeft="@mipmap/email_icon"
+                        android:drawableStart="@mipmap/email_icon"
+                        android:drawablePadding="20dp"
+                        android:layout_toLeftOf="@id/userDetailsEditButton"
+                        android:layout_toStartOf="@id/userDetailsEditButton"/>
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/phoneNumLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_10">
+                <TextView
+                    android:id="@+id/userPhoneNo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:maxLines="1"
+                    android:drawableLeft="@mipmap/phone_icon"
+                    android:drawableStart="@mipmap/phone_icon"
+                    android:drawablePadding="20dp"
+                    android:textColorHint="@color/hint_dark_color"
+                    android:textSize="15sp"
+                    android:padding="12dp"
+                    android:textColor="#000" />
+            </android.support.v7.widget.CardView>
+
+           <!-- <Button
+                android:id="@+id/otticeWallet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:padding="12dp"
+                android:maxLines="1"
+                android:gravity="center_vertical"
+                android:text="Ottice Wallet"
+                android:textColor="#000"
+                android:textAllCaps="false"
+                android:layout_marginTop="10dp"
+                android:drawableRight="@mipmap/arrow_icon"
+                android:drawableEnd="@mipmap/arrow_icon"
+                android:background="@drawable/button_bg"/>-->
+
+            <Button
+                android:id="@+id/logoutButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:padding="12dp"
+                android:maxLines="1"
+                android:gravity="center_vertical"
+                android:text="@string/logout"
+                android:drawableLeft="@mipmap/logout_icon"
+                android:drawableStart="@mipmap/logout_icon"
+                android:drawablePadding="@dimen/dp_20"
+                android:layout_marginTop="@dimen/dp_10"
+                android:textColor="#000"
+                android:textAllCaps="false"
+                android:elevation="2dp"
+                android:stateListAnimator="@null"
+                android:drawableRight="@mipmap/arrow_icon"
+                android:drawableEnd="@mipmap/arrow_icon"
+                android:background="@drawable/button_bg"
+                tools:targetApi="lollipop" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <!--if user is not signed in then this layout will be visible-->
+    <RelativeLayout
+        android:id="@+id/profileNoSignInLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/profileAppBar"
+        android:background="#e6e4e4"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/profileSignInText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/profile_sign_in_text"
+            android:textSize="15sp"
+            android:layout_centerInParent="true"
+            android:textColor="#5a5a5a"/>
+
+        <Button
+            android:id="@+id/profileSignInButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sign_in"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/profileSignInText"
+            android:layout_marginTop="30dp"/>
+    </RelativeLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "893683441920",
+    "firebase_url": "https://ottice-142305.firebaseio.com",
+    "project_id": "ottice-142305",
+    "storage_bucket": "ottice-142305.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:893683441920:android:e16579f55e3e79a3",
+        "android_client_info": {
+          "package_name": "com.ottice.ottice"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "893683441920-ruupqvcag2tc21fj8lf2fuogceg3mmtg.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.ottice.ottice",
+            "certificate_hash": "950dfd6bfaba75eb58e0ca585b4e0890f3b6c254"
+          }
+        },
+        {
+          "client_id": "893683441920-v9iaqmgjd5f27a03n2su5jcqqeqr8s4g.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDqGknODVH2PtIA0VyWpbb7Q3MtfKPbJ4o"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "893683441920-v9iaqmgjd5f27a03n2su5jcqqeqr8s4g.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

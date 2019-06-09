@@ -1,0 +1,90 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowBackground">@mipmap/login_bg</item>
+        <item name="android:statusBarColor" tools:targetApi="lollipop">@android:color/transparent</item>
+        <item name="colorControlNormal">@color/color_c7c6c7</item>
+        <item name="colorControlActivated">@color/color_c7c6c7</item>
+        <item name="colorControlHighlight">@color/color_c7c6c7</item>
+    </style>
+
+    <style name="AppTheme.ProviderInfo" parent="AppTheme">
+        <item name="windowActionBar">true</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowTranslucentStatus" tools:targetApi="kitkat">true</item>
+        <item name="android:windowDrawsSystemBarBackgrounds" tools:targetApi="lollipop">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark" />
+
+    <style name="FilterScreenTheme" parent="AppTheme">
+        <item name="android:statusBarColor" tools:targetApi="lollipop">@color/color_f7f7f7</item>
+        <item name="android:windowLightStatusBar" tools:targetApi="m">true</item>
+    </style>
+
+
+    <style name="SearchScreenTheme" parent="AppTheme">
+        <item name="android:windowBackground">@color/color_white</item>
+    </style>
+
+    <style name="SplashScreenTheme" parent="AppTheme">
+        <item name="android:windowBackground">@mipmap/login_bg</item>
+    </style>
+
+    <style name="PaymentSuccessFailureTheme" parent="AppTheme">
+        <item name="android:statusBarColor" tools:targetApi="lollipop">@color/color_f7f7f7</item>
+        <item name="android:windowBackground">@color/color_c7c6c7</item>
+        <item name="android:windowLightStatusBar" tools:targetApi="m">true</item>
+    </style>
+
+    <style name="DialogAnimation">
+        <item name="android:windowEnterAnimation">@anim/slide_up_dialog</item>
+        <item name="android:windowExitAnimation">@anim/slide_out_down</item>
+    </style>
+
+    <style name="PickerDialogTheme">
+        <item name="android:background">@drawable/picker_dialogbox_background</item>
+    </style>
+
+
+
+    <style name="TextAppearance.ShowcaseView.Title" parent="android:style/TextAppearance.Large">
+        <item name="android:textColor">#15a77a</item>
+        <item name="android:textSize">@dimen/sp_26</item>
+    </style>
+
+    <style name="TextAppearance.ShowcaseView.Detail" parent="android:style/TextAppearance">
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:textSize">@dimen/sp_16</item>
+    </style>
+
+    <style name="custom_floating_button_theme" parent="Widget.Design.FloatingActionButton">
+        <item name="backgroundTint">@color/color_d560a1</item>
+        <item name="borderWidth">2dp</item>
+    </style>
+
+    <style name="change_password_theme" parent="AppTheme">
+        <item name="android:windowBackground">@color/color_f0f0f0</item>
+        <item name="android:windowLightStatusBar" tools:targetApi="m">true</item>
+        <item name="colorControlNormal">#d3d3d3</item>
+        <item name="colorControlActivated">#d3d3d3</item>
+        <item name="colorControlHighlight">#d3d3d3</item>
+        <item name="android:statusBarColor" tools:targetApi="lollipop">#f7f7f7</item>
+    </style>
+    <style name="RatingBar" parent="@android:style/Widget.RatingBar">
+
+        <item name="android:progressDrawable">@drawable/star_press</item>
+        <item name="android:minHeight">@dimen/dp_25</item>
+    </style>
+
+    <style name="customThemeWhite" parent="AppTheme">
+        <item name="android:windowBackground">@color/color_f7f7f7</item>
+        <item name="android:windowLightStatusBar" tools:targetApi="m">true</item>
+    </style>
+
+</resources>

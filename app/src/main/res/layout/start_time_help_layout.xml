@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="50dp">
+
+    <TextView
+        android:id="@+id/startTimeHelpTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/start_time_help_title"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:textColor="#31b46e"
+        android:layout_marginTop="40dp"
+        android:textSize="26sp"/>
+
+    <TextView
+        android:id="@+id/startTimeHelpMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:textColor="#ffffff"
+        android:layout_below="@id/startTimeHelpTitle"
+        android:text="@string/start_time_help_message"
+        android:layout_marginTop="20dp"
+        android:padding="10dp"/>
+
+
+    <Button
+        android:id="@+id/startTimeGotItButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Got It"
+        android:textSize="18sp"
+        android:textAllCaps="false"
+        android:textColor="#fff"
+        android:layout_gravity=""
+        android:layout_marginLeft="20dp"
+        android:background="@drawable/help_button_background"
+        android:layout_alignParentBottom="true"/>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/startTimeHelpMessage"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:layout_marginTop="17dp"
+        android:background="@drawable/start_time_duration_help_background">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/city_heading_background">
+            <TextView
+                android:id="@+id/planTypeHeading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:textColor="#fff"
+                android:text="@string/hourly"
+                android:textSize="@dimen/sp_16" />
+
+            <View
+                android:id="@+id/separator"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_.5"
+                android:layout_below="@id/planTypeHeading"
+                android:background="#bcb9b9" />
+
+            <LinearLayout
+
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_40"
+                android:layout_below="@id/separator"
+                android:baselineAligned="false">
+
+                <ImageView
+                    android:layout_width="@dimen/dp_40"
+                    android:layout_height="match_parent"
+                    android:src="@mipmap/hourly_icon"
+                    android:contentDescription="@string/plan_type_icon"/>
+                <View
+                    android:layout_width="@dimen/dp_1"
+                    android:layout_height="match_parent"
+                    android:background="#bcb9b9"
+                    android:layout_marginTop="@dimen/dp_5"
+                    android:layout_marginBottom="@dimen/dp_5"/>
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+                    <TextView
+                        android:id="@+id/helpdateHeading"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/start_date"
+                        android:layout_centerHorizontal="true"
+                        android:textColor="#fff"
+                        android:textSize="@dimen/sp_12" />
+                    <TextView
+                        android:id="@+id/helpDate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/helpdateHeading"
+                        android:layout_centerHorizontal="true"
+                        android:textColor="#fff"
+                        android:textSize="@dimen/sp_15"/>
+                    <View
+                        android:layout_width="@dimen/dp_1"
+                        android:layout_height="match_parent"
+                        android:background="#bcb9b9"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginTop="@dimen/dp_5"
+                        android:layout_marginBottom="@dimen/dp_5"/>
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+                    <TextView
+                        android:id="@+id/helpTimeHeading"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/start_time"
+                        android:layout_centerHorizontal="true"
+                        android:textColor="#fff"
+                        android:textSize="@dimen/sp_12" />
+                    <TextView
+                        android:id="@+id/helpTime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:textColor="#fff"
+                        android:textSize="@dimen/sp_15"
+                        android:layout_below="@id/helpTimeHeading"/>
+                    <View
+                        android:layout_width="@dimen/dp_1"
+                        android:layout_height="match_parent"
+                        android:background="#bcb9b9"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginTop="@dimen/dp_5"
+                        android:layout_marginBottom="@dimen/dp_5"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+                    <TextView
+                        android:id="@+id/helpdurationHeading"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/duration"
+                        android:layout_centerHorizontal="true"
+                        android:textColor="#fff"
+                        android:textSize="@dimen/sp_12" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:textColor="#fff"
+                        android:text="1 hour"
+                        android:textSize="@dimen/sp_15"
+                        android:layout_below="@id/helpdurationHeading"/>
+                </RelativeLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

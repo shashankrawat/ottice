@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <ImageView
+        android:id="@+id/amenitiesIcon"
+        android:layout_width="@dimen/dp_30"
+        android:layout_height="@dimen/dp_30"
+        android:padding="@dimen/dp_2"
+        android:scaleType="fitXY"
+        android:contentDescription="@string/amenities_icon"/>
+
+    <TextView
+        android:id="@+id/amenityName"
+        android:layout_width="@dimen/dp_60"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="@dimen/sp_12"
+        android:textColor="@color/color_white" />
+</LinearLayout>

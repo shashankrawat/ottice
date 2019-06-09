@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:paddingBottom="50dp">
+
+    <TextView
+        android:id="@+id/hintSearchBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/dashboard_search_city_hint"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:paddingLeft="@dimen/dp_20"
+        android:paddingTop="@dimen/dp_20"
+        android:paddingBottom="@dimen/dp_20"
+        android:paddingRight="@dimen/dp_20"
+        android:elevation="4dp"
+        android:background="@drawable/search_help_tab_background"
+        android:textColorHint="@color/color_838282"
+        android:textSize="@dimen/sp_14"
+        android:drawableLeft="@mipmap/dashboard_search_icon"
+        android:drawableStart="@mipmap/dashboard_search_icon"
+        android:drawablePadding="@dimen/dp_15"
+        android:focusableInTouchMode="true"
+        android:layout_marginTop="-5dp"
+        tools:targetApi="lollipop" />
+
+
+    <TextView
+        android:id="@+id/searchHintTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/search_city_help_title"
+        android:textColor="#31b46e"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_below="@id/hintSearchBar"
+        android:layout_marginTop="30dp"
+        android:textSize="26sp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/searchHintTitle"
+        android:textSize="20sp"
+        android:textColor="#ffffff"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:gravity="center"
+        android:text="@string/search_city_help_message"
+        android:layout_marginTop="20dp"
+        android:padding="10dp"/>
+    <Button
+        android:id="@+id/searchHintButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/got_it"
+        android:textSize="18sp"
+        android:textAllCaps="false"
+        android:textColor="#fff"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="20dp"
+        android:background="@drawable/help_button_background"/>
+</RelativeLayout>

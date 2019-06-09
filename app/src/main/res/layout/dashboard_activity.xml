@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/mainDashboardContainer"
+    android:fitsSystemWindows="true">
+
+    <FrameLayout
+        android:id="@+id/dashboardContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/menuMainLayout"
+        android:fitsSystemWindows="true"/>
+
+    <RelativeLayout
+        android:id="@+id/menuMainLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:animateLayoutChanges="true"
+        android:background="#ffffff"
+        android:layout_alignParentBottom="true">
+        <RelativeLayout
+            android:id="@+id/menuOpenerLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true">
+            <ImageView
+                android:id="@+id/menuOpener"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/slide_icon"
+                android:padding="@dimen/dp_5"/>
+            <TextView
+                android:id="@+id/menuOpenerNotifyIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1"
+                android:textSize="@dimen/sp_9"
+                android:textColor="#000"
+                android:gravity="center"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="1dp"
+                android:visibility="gone"
+                android:background="@drawable/ping_background"/>
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:id="@+id/menuLayout"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:layout_below="@id/menuOpenerLayout"
+            android:visibility="visible"
+            android:background="@drawable/picker_dialogbox_background">
+
+            <Button
+                android:id="@+id/homeButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Home"
+                style="?android:buttonBarButtonStyle"
+                android:layout_weight="1"
+                android:textSize="10sp"
+                android:textColor="@drawable/menu_item_selector"
+                android:textAllCaps="false"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+                <Button
+                    android:id="@+id/myBookingsButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="My Bookings"
+                    android:background="@null"
+                    android:textSize="10sp"
+                    android:textColor="@drawable/menu_item_selector"
+                    android:textAllCaps="false"/>
+                <TextView
+                    android:id="@+id/myBookingNotifyIcon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1"
+                    android:textSize="9sp"
+                    android:textColor="#000"
+                    android:visibility="gone"
+                    android:gravity="center"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="1dp"
+                    android:background="@drawable/ping_background"/>
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/profileButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Profile"
+                style="?android:buttonBarButtonStyle"
+                android:layout_weight="1"
+                android:textSize="10sp"
+                android:textColor="@drawable/menu_item_selector"
+                android:textAllCaps="false"/>
+
+            <Button
+                android:id="@+id/moreButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="More"
+                style="?android:buttonBarButtonStyle"
+                android:layout_weight="1"
+                android:textSize="10sp"
+                android:textColor="@drawable/menu_item_selector"
+                android:textAllCaps="false"/>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+
+</RelativeLayout>

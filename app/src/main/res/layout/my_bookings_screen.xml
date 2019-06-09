@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/myBookingAppBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/picker_dialogbox_background">
+        <android.support.v7.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/picker_dialogbox_background">
+            <TextView
+                android:id="@+id/toolbarTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/my_booking"
+                android:textAllCaps="true"
+                android:layout_gravity="center"
+                android:textColor="@color/color_3e3e3e"
+                android:textSize="20sp"/>
+        </android.support.v7.widget.Toolbar>
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/myBookingRecycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/myBookingAppBar" />
+
+    <TextView
+        android:id="@+id/noBookingsText"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/myBookingAppBar"
+        android:text="No Booking History Found"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:visibility="gone"
+        android:textColor="#5a5a5a"
+        android:background="#e6e4e4"/>
+
+    <RelativeLayout
+        android:id="@+id/noSignInLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/myBookingAppBar"
+        android:background="#e6e4e4"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/signInText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sign in to see and manage your bookings"
+            android:textSize="15sp"
+            android:layout_centerInParent="true"
+            android:textColor="#5a5a5a"/>
+
+        <Button
+            android:id="@+id/myBookingSignInButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sign_in"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/signInText"
+            android:layout_marginTop="30dp"/>
+    </RelativeLayout>
+
+</RelativeLayout>

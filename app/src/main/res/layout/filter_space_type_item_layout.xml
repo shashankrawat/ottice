@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="120dp"
+    android:layout_height="match_parent"
+    android:id="@+id/spaceTypeItemLayout">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerInParent="true">
+        <ImageView
+            android:id="@+id/spaceTypeImage"
+            android:layout_width="@dimen/dp_40"
+            android:layout_height="@dimen/dp_40"
+            android:layout_gravity="center_horizontal"
+            android:src="@mipmap/placeholder"
+            android:scaleType="fitXY"
+            android:contentDescription="@string/space_type_image_description"/>
+
+        <TextView
+            android:id="@+id/spaceTypeName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#414040"
+            android:textSize="@dimen/sp_12"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/dp_5"/>
+
+        <TextView
+            android:id="@+id/planType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#414040"
+            android:textSize="@dimen/sp_12"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center" />
+    </LinearLayout>
+
+
+    <View
+        android:id="@+id/spaceTypeItemDivider"
+        android:layout_width="@dimen/dp_1"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:background="#787575"
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_marginBottom="@dimen/dp_10"/>
+
+
+</RelativeLayout>

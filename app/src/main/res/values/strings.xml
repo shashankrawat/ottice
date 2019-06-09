@@ -1,0 +1,298 @@
+<resources>
+    <string name="package_name">com.ottice.ottice</string>
+    <string name="app_name">Ottice</string>
+
+    <string name="no_internet_connection">NO INTERNET CONNECTION</string>
+    <string name="no_connection_message">Please check your internet connection and retry</string>
+    <string name="retry">Retry</string>
+    <string name="ok">OK</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="network_not_enabled">Enable GPS Network</string>
+    <string name="open_location_settings">GPS needs to be on and set to high accuracy if you want to search nearby providers</string>
+    <string name="turn_on">Turn On</string>
+    <string name="cancel">Cancel</string>
+    <string name="decimal_format">%.0f</string>
+    <string name="around_me">Around me</string>
+    <string name="request_your_geoLocation">Request your geolocation</string>
+    <string name="retry_dialog_title">Oops!</string>
+    <string name="retry_dialog_message">Somthing went wrong. Can\'t able to connect to server.</string>
+    <string name="volley_error_message">Server connection lost ! Please retry</string>
+    <string name="transition_name">SearchBar</string>
+    <string name="map_transition_name">FullMap</string>
+    <string name="clear_button_description">Clear search value button</string>
+    <string name="search_hint_value">Search your city</string>
+    <string name="dashboard_search_city_hint">Tap to search other cities</string>
+    <string name="select_city_heading">You want to use Ottice At?</string>
+    <string name="no_city_result">No such city found. Please search another location.</string>
+    <string name="space_image_description">Space Image</string>
+    <string name="space_type_image_description">Space Type Image</string>
+    <string name="app_logo">App Logo</string>
+    <string name="forgot_password">Forgot Password</string>
+    <string name="forgot_password_subheading">Enter your email address, and we\'ll send you code so you can reset your password.</string>
+    <string name="send_an_email">Send an email</string>
+    <string name="close_button">Close Button</string>
+    <string name="no_internet_title">Oh no!</string>
+    <string name="no_internet_message">No internet connection. Please check your connection and try again.</string>
+    <string name="try_again">Try Again</string>
+    <string name="space_image_transition">Space Image Transition</string>
+    <string name="amenities_icon">Amenities Icon</string>
+    <string name="ottice_tag_line">A reflection of your office</string>
+    <string name="size_n_layout">Size and Layout</string>
+    <string name="coming_soon">Coming soon..</string>
+    <string name="amenities">Amenities</string>
+    <string name="good_for">Good for</string>
+    <string name="hourly">Hourly</string>
+    <string name="daily">Daily</string>
+    <string name="booked_on">Start date</string>
+    <string name="start_time">Start time</string>
+    <string name="duration_for">Duration for</string>
+    <string name="seats_selection_text">Select no. of seats required</string>
+    <string name="price_tier">Price Tier</string>
+    <string name="net_amount">Net amount</string>
+    <string name="proceed">Proceed</string>
+    <string name="exclusive_text">*Exclusive of all taxes</string>
+    <string name="filters">Filters</string>
+    <string name="reset">Reset</string>
+    <string name="select_plan_heading">Select your space plan type</string>
+    <string name="seats_required">Seats Required?</string>
+    <string name="price_range">Price Range</string>
+    <string name="choose_amenities">Choose Amenities</string>
+    <string name="apply">Apply</string>
+    <string name="plan_type_icon">Plan type icon</string>
+    <string name="start_date">Start Date</string>
+    <string name="duration">Duration</string>
+    <string name="no_provider_text">There are no providers available</string>
+    <string name="invoice">Invoice</string>
+    <string name="booking_type">Booking Type</string>
+    <string name="seats_booked">Seats Booked</string>
+    <string name="time_summary">Time Summary</string>
+    <string name="choose_date">Choose Date</string>
+    <string name="choose_time">Choose Time</string>
+    <string name="date">Date</string>
+    <string name="time">Time</string>
+    <string name="request_tour">Request a Tour</string>
+    <string name="price_summary">Price Summary</string>
+    <string name="net_price">Net Price</string>
+    <string name="cgst">Cgst (9%)</string>
+    <string name="sgst">Sgst (9%)</string>
+    <string name="kk_cess">KK Cess</string>
+    <string name="total">Total</string>
+    <string name="total_amount">Total Amount</string>
+    <string name="inclusive_of_all_tax">Inclusive of all taxes</string>
+    <string name="pay">Pay</string>
+    <string name="select">Select</string>
+    <string name="office_type_icon_description">Office type Icon</string>
+    <string name="reset_password">Reset Password</string>
+    <string name="reset_password_note">Enter code sent to your mail and new password to reset password</string>
+    <string name="code">Code</string>
+    <string name="otp_code">OTP Code</string>
+    <string name="new_password">New Password</string>
+    <string name="verification">Verification</string>
+    <string name="verification_note">Enter the code we have sent to your email</string>
+    <string name="verify">Verify</string>
+    <string name="search_nearby_text">Near your current position</string>
+    <string name="ottice_cities">Ottice Cities</string>
+    <string name="search_no_city_found_text">No such city found. Please search another location..</string>
+    <string name="cross_button_description">cross button</string>
+    <string name="app_logo_description">App logo</string>
+    <string name="email_address">Email Address</string>
+    <string name="address">Address</string>
+    <string name="password">Password</string>
+    <string name="login_forgot_password">Forgot password?</string>
+    <string name="or">OR</string>
+    <string name="fb_logo">f</string>
+    <string name="fb_login_text">Login with Facebook</string>
+    <string name="no_account_text">Don\'t have an account yet?</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="sign_in">Sign In</string>
+    <string name="welcome">Welcome…</string>
+    <string name="sign_up_tag_line">sign up to get started</string>
+    <string name="user_details_tag_line">It seems you are new to Ottice, please tell something about yourself.</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="login">Log In</string>
+    <string name="logout">Logout</string>
+    <string name="send_otp">Send OTP</string>
+    <string name="already_have_account">Already have an account?</string>
+    <string name="sign_in_button_description">SignIn Button</string>
+    <string name="sign_up_button_description">SignUp Button</string>
+    <string name="spaces">spaces</string>
+    <string name="space">space</string>
+    <string name="hours">hours</string>
+    <string name="hour">hour</string>
+    <string name="days">days</string>
+    <string name="day">day</string>
+    <string name="month">month</string>
+    <string name="months">months</string>
+    <string name="year">year</string>
+    <string name="years">years</string>
+    <string name="book">Book</string>
+    <string name="seat">Seat</string>
+    <string name="seats">Seats</string>
+    <string name="how_it_works">How It Works?</string>
+    <string name="skip">Skip</string>
+    <string name="get_started">Get Started</string>
+    <string name="got_it">Got It</string>
+    <string name="intro_image">Intrduction Image</string>
+    <string name="agree_text">I agree to Ottice\'s</string>
+    <string name="privacy_policy">Privacy Policies</string>
+    <string name="and">and</string>
+    <string name="terms_and_conditions">Terms and Conditions</string>
+    <string name="help">Help</string>
+    <string name="support">Ottice Support</string>
+    <string name="contact">Contact us at:</string>
+    <string name="mail_contact">Email Us</string>
+    <string name="profile_sign_in_text">Sign in to see and manage your profile</string>
+    <string name="logout_confirmation_message">Do you want to logout from this account?</string>
+    <string name="book_now">Book now</string>
+    <string name="rate">rating</string>
+    <string name="reviews">reviews</string>
+    <string name="save">Save</string>
+    <string name="booking">Booking</string>
+    <string name="to"><b> to </b></string>
+    <string name="mandatory_symbol">*</string>
+    <string name="booked_by">Booked by:</string>
+    <string name="trans_id_title">Trans. Id:</string>
+    <string name="from">From : </string>
+    <string name="to_">To : </string>
+    <string name="duration_">Duration : </string>
+    <string name="price_">Price : </string>
+    <string name="rupees">Rs. </string>
+    <string name="manage_your_order">Manage your Order</string>
+    <string name="email_invoice">Email Invoice</string>
+
+
+    <string name="fb_error">Facebook Error!</string>
+    <string name="fb_login_cancelled">Login cancelled !</string>
+    <string name="fb_login_unsuccessful">Login unsuccessful! Please try again..</string>
+    <string name="fb_login_successful">Login</string>
+
+
+    <string name="facebook_app_id">155873341633270</string>
+    <string name="fb_login_protocol_scheme">fb155873341633270</string>
+
+
+    <string-array name="permissions">
+        <item>email</item>
+        <item>public_profile</item>
+    </string-array>
+
+    <string-array name="no_of_seats">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10+</item>
+    </string-array>
+
+    <integer name="numSideItems">2</integer>
+
+    <string-array name="start_timings">
+        <item>09:00 AM</item>
+        <item>10:00 AM</item>
+        <item>11:00 AM</item>
+        <item>12:00 PM</item>
+        <item>01:00 PM</item>
+        <item>02:00 PM</item>
+        <item>03:00 PM</item>
+        <item>04:00 PM</item>
+        <item>05:00 PM</item>
+        <item>06:00 PM</item>
+        <item>07:00 PM</item>
+        <item>08:00 PM</item>
+    </string-array>
+
+
+    <!--RangeSeekBar string values-->
+    <string name="demo_min_label">Min</string>
+    <string name="demo_max_label">Max</string>
+
+
+    <string-array name="slider_headings">
+        <item>City Search</item>
+        <item>Refined Dashboard</item>
+        <item>Look Details</item>
+        <item>Secure Payment</item>
+    </string-array>
+
+    <string-array name="slider_sub_headings">
+        <item>Find the rent spaces near you or in your preference city.</item>
+        <item>Choose your required space from refined data.</item>
+        <item>Check out all details of the space like amenities, photos etc.</item>
+        <item>Easy to pay. Use your card or wallet!</item>
+    </string-array>
+
+    <integer-array name="slider_images">
+        <item>@mipmap/slider_01</item>
+        <item>@mipmap/slider_02</item>
+        <item>@mipmap/slider_03</item>
+        <item>@mipmap/slider_04</item>
+    </integer-array>
+
+
+    <!--showcaseview strings-->
+    <string name="search_city_help_title">Search other citites</string>
+    <string name="search_city_help_message">Tap the city search bar on the map view to search your preferred space in other cities </string>
+    <string name="filter_help_title">Filter Data</string>
+    <string name="filter_help_message">Tap the filter Button to get your data filtered according to your requirement</string>
+    <string name="start_time_help_title">Start Time and Duration</string>
+    <string name="start_time_help_message">Tap and select your start date, time and duration of periods for which space is required</string>
+
+    <!--payment success/failure strings-->
+    <string name="succes_failure_image">Succes Failure Image</string>
+    <string name="payment_successfull">Payment Successful</string>
+    <string name="payment_failure">Payment Failed</string>
+
+
+    <!--profile screen strings-->
+    <string name="profile">Profile</string>
+    <string name="change_password">Change Password</string>
+
+    <string name="gallery">Gallery</string>
+    <string name="camera">Camera</string>
+    <string name="choose_an_option">Choose an Option</string>
+
+
+    <!--change password screen strings-->
+    <string name="old_password">Old Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="change">Change</string>
+    <string name="mandatory_text">All Fields are mandatory. Please fill all.</string>
+    <string name="change_success_message">Your password has been changed successfully</string>
+    <string name="done">Done</string>
+
+    <!--update profile screen strings-->
+    <string name="update_profile">Edit Profile</string>
+    <string name="middle_name">Middle Name</string>
+    <string name="city">City</string>
+    <string name="state">State</string>
+    <string name="pincode">Pincode</string>
+    <string name="update">Update</string>
+    <string name="update_profile_success_message">Your profile has been updated successfully</string>
+    <string name="rating_reviews">Rating &amp; Reviews</string>
+    <string name="write_reviews">Rate &amp; Write Reviews</string>
+    <string name="Book_tour">Book Tour</string>
+    <string name="my_booking">My bookings</string>
+    <string name="settings">Settings</string>
+    <string name="view_all_review">View all reviews</string>
+    <string name="booking_details">Booking Details</string>
+    <string name="payment_mode">Payment mode</string>
+
+
+
+
+    <!--error texts-->
+    <string name="err_no_space_found">There are no spaces available.</string>
+    <string name="err_no_reviews">No reviews yet.</string>
+
+
+    <!--images view content Descriptions-->
+    <string name="reload_button">Reload Button</string>
+</resources>

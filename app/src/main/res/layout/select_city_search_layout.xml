@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/dp_30"
+    android:layout_marginRight="@dimen/dp_30"
+    android:layout_marginTop="@dimen/dp_6">
+
+    <TextView
+        android:id="@+id/cancelSearch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cancel"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:padding="@dimen/dp_10"
+        android:visibility="invisible"
+        android:textColor="@color/color_white"
+        android:textSize="@dimen/sp_16"/>
+
+    <com.ottice.ottice.utils.SearchLayout
+        android:id="@+id/searchETLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/search_bar_background">
+        <EditText
+            android:id="@+id/searchBarET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:imeOptions="actionDone"
+            android:inputType="text"
+            android:clickable="true"
+            android:cursorVisible="false"
+            android:hint="@string/search_hint_value"
+            android:padding="@dimen/dp_10"
+            android:maxLines="1"
+            android:textColorHint="@color/hint_dark_color"
+            android:drawableLeft="@mipmap/dashboard_search_icon"
+            android:drawablePadding="@dimen/dp_10"
+            android:drawableStart="@mipmap/dashboard_search_icon"
+            android:textSize="@dimen/sp_15"
+            android:layout_toLeftOf="@+id/clearAllButton"
+            android:layout_toStartOf="@+id/clearAllButton"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"/>
+        <ImageButton
+            android:id="@+id/clearAllButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:background="@null"
+            android:visibility="gone"
+            android:contentDescription="@string/clear_button_description"
+            android:src="@android:drawable/ic_menu_close_clear_cancel"/>
+    </com.ottice.ottice.utils.SearchLayout>
+
+</RelativeLayout>

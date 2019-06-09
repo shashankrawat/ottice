@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/bookedSpaceTransactionId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/sp_14"
+        android:textColor="@color/color_c7c6c7"
+        android:paddingTop="@dimen/dp_10"
+        android:textStyle="bold"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_marginRight="@dimen/dp_10"
+        android:gravity="end|center_vertical" />
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="@dimen/dp_2"
+        app:cardElevation="@dimen/dp_4"
+        android:elevation="@dimen/dp_4"
+        android:layout_below="@id/bookedSpaceTransactionId"
+        tools:targetApi="lollipop">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_100">
+
+            <ImageView
+                android:id="@+id/bookedSpaceImage"
+                android:layout_width="@dimen/dp_100"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:layout_centerVertical="true"
+                android:contentDescription="@string/space_image_description"/>
+
+            <TextView
+                android:id="@+id/bookedSpaceName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/bookedSpaceImage"
+                android:layout_toEndOf="@id/bookedSpaceImage"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:layout_marginRight="@dimen/dp_10"
+                android:layout_marginTop="@dimen/dp_10"
+                android:textSize="@dimen/sp_16"
+                android:textStyle="bold"
+                android:textColor="@color/color_black" />
+
+            <TextView
+                android:id="@+id/bookedSpaceStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/sp_15"
+                android:textColor="@color/color_3b95b3"
+                android:layout_toRightOf="@id/bookedSpaceImage"
+                android:layout_toEndOf="@id/bookedSpaceImage"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:layout_marginRight="@dimen/dp_10"
+                android:layout_below="@id/bookedSpaceName"
+                android:layout_marginTop="@dimen/dp_10"/>
+            <TextView
+                android:id="@+id/bookingPeriod"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/bookedSpaceImage"
+                android:layout_toEndOf="@id/bookedSpaceImage"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:layout_marginRight="@dimen/dp_10"
+                android:layout_below="@id/bookedSpaceStatus"
+                android:layout_marginTop="@dimen/dp_2"
+                android:textSize="@dimen/sp_12" />
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+
+</RelativeLayout>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/dp_20">
+
+    <ImageView
+        android:id="@+id/appLogoIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/login_logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dp_60"
+        android:contentDescription="@string/app_logo"/>
+
+    <TextView
+        android:id="@+id/warningHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/no_internet_title"
+        android:textSize="@dimen/sp_20"
+        android:textStyle="bold"
+        android:textColor="#b5b5b5"
+        android:gravity="center"
+        android:layout_below="@id/appLogoIcon"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dp_80"/>
+    <TextView
+        android:id="@+id/warningNote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/warningHeading"
+        android:text="@string/no_internet_message"
+        android:gravity="center"
+        android:textSize="@dimen/sp_18"
+        android:textColor="#b5b5b5" />
+
+    <Button
+        android:id="@+id/retryButton"
+        android:layout_width="@dimen/dp_200"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/warningNote"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dp_20"
+        android:text="@string/try_again"
+        android:textSize="@dimen/sp_18"
+        android:textColor="@color/color_white"
+        android:textAllCaps="true"
+        android:background="@drawable/retry_button_background" />
+
+
+</RelativeLayout>

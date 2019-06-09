@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/toolbarAppBar"
+        android:background="@drawable/picker_dialogbox_background">
+        <android.support.v7.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/filterCancelButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/cancel"
+                android:textSize="@dimen/sp_18"
+                android:padding="@dimen/dp_10"
+                android:textColor="#8ea7ff"
+                android:layout_gravity="center_vertical|start"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/filters"
+                android:textColor="@color/color_3e3e3e"
+                android:textStyle="bold"
+                android:textAllCaps="true"
+                android:textSize="@dimen/sp_18"
+                android:layout_gravity="center"/>
+            <TextView
+                android:id="@+id/filterResetButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/reset"
+                android:textColor="#8ea7ff"
+                android:textSize="@dimen/sp_18"
+                android:padding="@dimen/dp_10"
+                android:layout_gravity="center_vertical|end"/>
+        </android.support.v7.widget.Toolbar>
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/filterScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="ifContentScrolls"
+        android:layout_below="@id/toolbarAppBar"
+        android:layout_above="@+id/applyFilterButton">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/dp_20"
+            android:paddingBottom="@dimen/dp_20"
+            android:paddingLeft="@dimen/dp_30"
+            android:paddingRight="@dimen/dp_30"
+            android:background="@android:color/transparent">
+
+            <TextView
+                android:id="@+id/spaceTypeHeading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="@string/select_plan_heading"
+                android:padding="@dimen/dp_10"
+                android:textColor="#fff"
+                android:textStyle="bold"
+                android:textSize="@dimen/sp_18"/>
+            <android.support.v7.widget.CardView
+                android:id="@+id/spaceTypeLayout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_100"
+                android:background="#fff"
+                android:layout_below="@id/spaceTypeHeading">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/spaceTypeRecyclerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+                <ProgressBar
+                    android:id="@+id/spaceTypeProgressBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:layout_gravity="center"
+                    android:gravity="center"/>
+                <TextView
+                    android:id="@+id/retrySpaceType"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/retry"
+                    android:layout_gravity="center"
+                    android:visibility="gone"
+                    android:gravity="center"
+                    android:textSize="@dimen/sp_16"
+                    android:drawableTop="@mipmap/reload_icon"/>
+
+            </android.support.v7.widget.CardView>
+
+            <TextView
+                android:id="@+id/noOfSeatsHeading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="@string/seats_required"
+                android:padding="@dimen/dp_10"
+                android:textColor="#fff"
+                android:textStyle="bold"
+                android:textSize="@dimen/sp_18"
+                android:layout_marginTop="@dimen/dp_10"
+                android:layout_below="@id/spaceTypeLayout"/>
+            <android.support.v7.widget.CardView
+                android:id="@+id/noOfSeatsLayout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_60"
+                android:background="#fff"
+                android:layout_below="@id/noOfSeatsHeading">
+
+               <com.wefika.horizontalpicker.HorizontalPicker
+                   android:id="@+id/noOfSeatPicker"
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:textSize="@dimen/sp_24"
+                   android:textColor="@color/color_646262"
+                   android:marqueeRepeatLimit="-1"
+                   app:values="@array/no_of_seats"
+                   app:sideItems="@integer/numSideItems"
+                   app:dividerSize="@dimen/dp_5"
+                   android:focusableInTouchMode="true"
+                   android:focusable="true" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/horizontal_picker_background"
+                    android:layout_gravity="center"/>
+            </android.support.v7.widget.CardView>
+
+            <TextView
+                android:id="@+id/priceRangeHeading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="@string/price_range"
+                android:padding="@dimen/dp_10"
+                android:textColor="#fff"
+                android:textStyle="bold"
+                android:textSize="@dimen/sp_18"
+                android:layout_marginTop="@dimen/dp_10"
+                android:layout_below="@id/noOfSeatsLayout"/>
+
+            <com.ottice.ottice.utils.RangeSeekBar
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/priceRangeSeekBar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/priceRangeHeading"
+                app:activeColor="#d560a1"
+                app:absoluteMaxValue="@integer/max_price_value"
+                app:alwaysActive="true"
+                app:barLineHeight="@dimen/dp_12"
+                app:step="100"
+                app:defaultColor="#fff"
+                app:paddingEnd="@dimen/dp_10"
+                app:paddingStart="@dimen/dp_10"
+                app:internalPadding="@dimen/dp_10"
+                app:showLabels="false"
+                app:thumbNormal="@drawable/seekbar_indicator_pressed"
+                app:thumbDisabled="@drawable/seekbar_indicator_pressed"
+                app:thumbPressed="@drawable/seekbar_indicator_pressed"
+                app:thumbShadowBlur="@dimen/dp_10"
+                app:activateOnDefaultValues="true"
+                app:valuesAboveThumbs="true"
+                app:thumbShadow="true" />
+
+
+            <TextView
+                android:id="@+id/filterAmenitiesHeading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="@string/choose_amenities"
+                android:padding="@dimen/dp_10"
+                android:textColor="#fff"
+                android:textStyle="bold"
+                android:textSize="@dimen/sp_18"
+                android:layout_marginTop="@dimen/dp_10"
+                android:layout_below="@id/priceRangeSeekBar"/>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/amenitiesLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/filterAmenitiesHeading">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/amenitiesRecyclerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#fff"/>
+                <ProgressBar
+                    android:id="@+id/amenitiesProgressBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:layout_gravity="center"
+                    android:gravity="center"/>
+                <TextView
+                    android:id="@+id/retryAmenities"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/retry"
+                    android:layout_gravity="center"
+                    android:visibility="gone"
+                    android:gravity="center"
+                    android:textSize="@dimen/sp_16"
+                    android:drawableTop="@mipmap/reload_icon"/>
+            </android.support.v7.widget.CardView>
+
+        </RelativeLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+    <Button
+        android:id="@+id/applyFilterButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/sp_16"
+        android:text="@string/apply"
+        android:textColor="#fff"
+        android:background="@drawable/description_booking_button_background"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>

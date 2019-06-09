@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#282828</color>
+    <color name="colorPrimaryDark">#1a1a1a</color>
+    <color name="colorAccent">#808080</color>
+    <color name="appColor">#848484</color>
+    <color name="color_404141">#404141</color>
+    <color name="color_6f6f6f">#6f6f6f</color>
+    <color name="color_3e3e3e">#3e3e3e</color>
+    <color name="color_fefefe">#fefefe</color>
+    <color name="color_fefeff">#fefeff</color>
+    <color name="color_c7c6c7">#c7c6c7</color>
+    <color name="color_white">#ffffff</color>
+    <color name="color_878787">#878787</color>
+    <color name="color_838282">#838282</color>
+    <color name="color_000000">#000000</color>
+    <color name="color_898888">#898888</color>
+    <color name="color_312f2f">#312f2f</color>
+    <color name="color_d560a1">#d560a1</color>
+    <color name="color_f0f0f0">#f0f0f0</color>
+    <color name="color_f7f7f7">#f7f7f7</color>
+    <color name="color_rating_filled">#f1b739</color>
+    <color name="color_rating_blank">#a6a6a6</color>
+    <color name="color_red">#e90000</color>
+    <color name="hint_light_color">#878787</color>
+    <color name="hint_dark_color">#838282</color>
+    <color name="color_a19e9e">#a19e9e</color>
+    <color name="color_7f7f7f">#7f7f7f</color>
+    <color name="color_9d9c9c">#9d9c9c</color>
+
+    <!--temporary filter space type recycler item color-->
+    <color name="color_3b95b3">#3b95b3</color>
+    <color name="color_414040">#414040</color>
+    <color name="color_646262">#646262</color>
+    <color name="color_black">#000000</color>
+
+</resources>
